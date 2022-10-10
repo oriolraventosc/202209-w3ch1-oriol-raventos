@@ -1,4 +1,4 @@
-/_ eslint-env-node _/;
+/* eslint-env node */
 module.exports = {
   env: {
     browser: true,
@@ -21,6 +21,5 @@ module.exports = {
       { exceptAfterSingleLine: true },
     ],
     "no-plusplus": "off",
-    "import/extensions": ["error", "always"],
   },
 };
