@@ -1,10 +1,14 @@
-/_ eslint-env-node _/;
+/* eslint-env node */
 module.exports = {
   env: {
     browser: true,
     es2021: true,
   },
-  extends: ["standard-with-typescript", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
@@ -17,6 +21,5 @@ module.exports = {
       { exceptAfterSingleLine: true },
     ],
     "no-plusplus": "off",
-    "import/extensions": ["error", "always"],
   },
 };
