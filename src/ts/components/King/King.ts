@@ -1,5 +1,5 @@
 import Characters from "../Characters.js";
-import Component from "../../Component.js";
+import Component from "../Component.js";
 
 class King extends Component implements Characters {
   name: string;

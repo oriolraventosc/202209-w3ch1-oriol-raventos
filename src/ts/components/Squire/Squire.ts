@@ -1,5 +1,5 @@
 import Characters from "../Characters";
-import Component from "../../Component.js";
+import Component from "../Component.js";
 
 class Squire extends Component implements Characters {
   name: string;

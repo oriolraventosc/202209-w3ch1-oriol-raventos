@@ -1,4 +1,4 @@
-import ComponentStructure from "./components/ComponentStructure";
+import ComponentStructure from "./ComponentStructure";
 
 class Component implements ComponentStructure {
   domElement: HTMLElement;
