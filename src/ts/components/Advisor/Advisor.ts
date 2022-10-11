@@ -1,4 +1,4 @@
-import Component from "../../Component.js";
+import Component from "../Component.js";
 import Characters from "../Characters.js";
 
 class Advisor extends Component implements Characters {

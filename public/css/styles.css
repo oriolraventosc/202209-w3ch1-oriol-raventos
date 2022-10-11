@@ -23,9 +23,6 @@ li {
   gap: 1rem;
 }
 
-.card {
-}
-
 .characters-list {
   flex-wrap: nowrap;
   max-width: 100%;
