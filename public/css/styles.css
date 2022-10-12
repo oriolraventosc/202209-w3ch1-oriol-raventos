@@ -148,4 +148,19 @@ li {
     justify-content: center;
     align-items: center;
   }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .character__name {
+    height: 60px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .character__card:hover .list-unstyled {
+    padding: 0;
+    margin-right: 0rem;
+    display: block;
+  }
 }
