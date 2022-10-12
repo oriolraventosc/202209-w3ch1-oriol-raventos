@@ -8,7 +8,7 @@ const container = document.querySelector(".root") as HTMLElement;
 
 const joffrey = new King("Joffrey", "Baratheon", 16, 2, container);
 joffrey.render();
-const jaimie = new FighterM("Jaime", "Lannister", 45, "Espada", 7, container);
+const jaimie = new FighterM("Jaime", "Lannister", 45, "Sword", 7, container);
 jaimie.render();
 const daenerys = new FighterW(
   "Daenerys",
@@ -19,9 +19,9 @@ const daenerys = new FighterW(
   container
 );
 daenerys.render();
-const tyrion = new Advisor("Tyrion", "Lannister", 40, "daenerys", container);
+const tyrion = new Advisor("Tyrion", "Lannister", 40, "Daenerys", container);
 tyrion.render();
-const bronn = new Squire("Bronn", "AguasNegras", 54, "jaime", 0, container);
+const bronn = new Squire("Bronn", "AguasNegras", 54, "Jaime", 0, container);
 bronn.render();
 
 const charactersArray = [];

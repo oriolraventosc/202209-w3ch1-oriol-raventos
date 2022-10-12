@@ -1,28 +1,10 @@
 body {
   background-color: #b9540c;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  font-family: Arial;
+  box-sizing: border-box;
+  margin-top: 0;
 }
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  text-align: center;
-}
-
-.root {
-  display: flex;
-  gap: 1rem;
-}
-
 .characters-list {
   flex-wrap: nowrap;
   max-width: 100%;
@@ -36,9 +18,8 @@ li {
 }
 .character__name {
   height: 60px;
+  font-size: 1.4rem;
   text-align: center;
-  font-size: 20px;
-  padding: 0 10px;
 }
 .character__picture {
   object-fit: cover;
@@ -52,7 +33,7 @@ li {
   background-color: #331c0e;
   color: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  max-width: 200px;
+  margin-top: 10px;
 }
 .character__overlay {
   border-radius: 0.25rem;
@@ -79,17 +60,29 @@ li {
   pointer-events: all;
   top: 0;
 }
-.character__actions {
+.character__card:hover .character__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  gap: 10px;
+}
+
+.character__card .character__actions {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 90px;
+  display: none;
 }
+
 .character__action {
   background-color: #67331e;
   color: #fff;
   width: 80%;
+  display: block;
 }
 .comunications {
   position: fixed;
@@ -123,6 +116,36 @@ li {
   top: 5px;
 }
 
-.list-unstyled {
-  padding: 0 0px;
+li {
+  list-style: none;
+  text-align: center;
+  margin: 5px;
+}
+
+.character__card:hover .list-unstyled {
+  padding: 0;
+  margin-right: 2.2rem;
+  display: block;
+}
+.character__card .list-unstyled {
+  padding: 0;
+  margin-right: 2.2rem;
+  display: none;
+}
+
+.character__overlay {
+  display: block;
+}
+
+@media (min-width: 400px) {
+  .root {
+    display: flex;
+    flex-direction: row;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

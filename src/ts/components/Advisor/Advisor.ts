@@ -46,7 +46,7 @@ class Advisor extends Component implements Characters {
 
     <div class="character__overlay">
     <ul class="list-unstyled">
-      <li>Danerys assessor</li>
+      <li>Assessor of: ${this.assessoring}</li>
       </ul>
     </div>
     <div class="character__actions">

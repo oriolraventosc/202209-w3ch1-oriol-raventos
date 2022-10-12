@@ -46,7 +46,7 @@ class King extends Component implements Characters {
 
     <div class="character__overlay">
     <ul class="list-unstyled">
-      <li>2 reign years</li>
+      <li>Reign Years: 2</li>
       </ul>
     </div>
     <div class="character__actions">
