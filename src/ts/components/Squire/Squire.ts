@@ -57,8 +57,8 @@ class Squire extends Component implements Characters {
 
     <div class="character__overlay">
     <ul class="list-unstyled">
-      <li>Admiring level 0</li>
-      <li>Serves Jaime</li>
+      <li>Admiring level: ${this.admireLevel}</li>
+      <li>Serving: ${this.serves}</li>
       </ul>
     </div>
     <div class="character__actions">
